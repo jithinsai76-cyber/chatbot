@@ -10,7 +10,7 @@ const port = 3000;
 
 // --- NEW: AI Setup ---
 // WARNING: Put your API key here. Do not share this file publicly with your key in it.
-const API_KEY = "AIzaSyAK2kpnBFXsCbAN9vvn-ZrrMIS1KfBEjZE";
+const API_KEY = "";
 const genAI = new GoogleGenerativeAI(API_KEY);
 // This is the NEW, correct line
 // This is the new, stable line
@@ -66,4 +66,5 @@ app.post('/chat', async (req, res) => {
 // 5. Start the server
 app.listen(port, () => {
     console.log(`✅ Server is running on http://localhost:${port}`);
+
 });
